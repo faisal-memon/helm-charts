@@ -47,6 +47,10 @@ jobs:
 
   tests:
     runs-on: ubuntu-22.04
+    needs:
+      - lint-chart
+      - build-matrix
+
     strategy:
       matrix:
         k8s:
