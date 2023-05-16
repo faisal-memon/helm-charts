@@ -29,8 +29,6 @@ jobs:
     name: Build matrix
     runs-on: ubuntu-22.04
 
-    needs: [lint-chart]
-
     steps:
       - name: Checkout
         uses: actions/checkout@v3.5.2
@@ -48,7 +46,6 @@ jobs:
   test:
     runs-on: ubuntu-22.04
     needs:
-      - lint-chart
       - build-matrix
 
     strategy:
