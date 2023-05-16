@@ -44,3 +44,9 @@ Secondary Deployment Types.
 **Trust Domain**
 : The host field of a SPIFFE ID, naming a minimum footprint of a trust
 bundle's distribution.
+
+New glossary item
+New glossary item 2
+New glossary item 3
+New glossary item 4
+New glossary item 5
