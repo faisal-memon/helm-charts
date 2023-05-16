@@ -1,0 +1,21 @@
+name: Helm Chart CI
+
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [synchronize, opened, reopened, edited]
+    paths-ignore:
+      - 'charts/**'
+      - '.github/workflows/helm-chart-ci.yaml'
+      - '.github/kind/conf/kind-config.yaml'
+      - '.github/tests/**/*.yaml'
+      - '.github/tests/**/*.sh'
+      - '.github/tests/**/*.json'
+      - 'examples/**/*.yaml'
+      - 'helm-docs.sh'
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - run: 'echo "No tests required"'
