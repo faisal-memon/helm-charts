@@ -22,6 +22,7 @@ case "$(uname -s)" in
     exe=helm-docs.exe
     ;;
 esac
+test change
 
 function install_helm_docs {
   curl -LO "https://github.com/norwoodj/helm-docs/releases/download/v${HELM_DOCS_VERSION}/helm-docs_${HELM_DOCS_VERSION}_${machine}_x86_64.tar.gz"
