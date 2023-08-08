@@ -30,6 +30,10 @@ server:
   {{- end }}
   {{- end }}
 
+  experimental:
+    cache_reload_interval: {{ .Values.experimental.cacheReloadInterval | quote }}
+    events_purge_interval: {{ .Values.experimental.eventsPurgeInterval | quote }}
+
 plugins:
   DataStore:
     - sql:

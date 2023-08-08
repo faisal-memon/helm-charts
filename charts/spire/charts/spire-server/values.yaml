@@ -126,7 +126,7 @@ dataStore:
     plugin_data: {}
 
 # -- The log level, valid values are "debug", "info", "warn", and "error"
-logLevel: info
+logLevel: debug
 # -- The JWT issuer domain
 jwtIssuer: oidc-discovery.example.org
 
@@ -217,6 +217,10 @@ notifier:
   k8sbundle:
     # -- Namespace to push the bundle into, if blank will default to SPIRE Server namespace
     namespace: ""
+
+experimental:
+  cacheReloadInterval: 5s
+  eventsPurgeInterval: 10s
 
 controllerManager:
   enabled: false
