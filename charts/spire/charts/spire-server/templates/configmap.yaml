@@ -32,7 +32,7 @@ server:
 
   experimental:
     cache_reload_interval: {{ .Values.experimental.cacheReloadInterval | quote }}
-    events_purge_interval: {{ .Values.experimental.eventsPurgeInterval | quote }}
+    prune_events_interval: {{ .Values.experimental.pruneEventsInterval | quote }}
 
 plugins:
   DataStore:
